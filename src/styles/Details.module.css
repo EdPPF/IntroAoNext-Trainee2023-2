@@ -1,0 +1,38 @@
+.h1 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+    width: 75%;
+    border-bottom-right-radius: 1rem/* 16px */;
+    margin-bottom: 1.25rem/* 20px */;
+    padding: 0.5rem/* 8px */;
+    text-align: center;
+}
+
+.div1 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.img {
+    margin-left: 10rem/* 160px */;
+    height: 18rem/* 288px */;
+    border-radius: 0.75rem/* 12px */;
+
+}
+
+.div2 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+    width: 50%;
+    border-radius: 0.5rem/* 8px */;
+    padding: 1rem/* 16px */;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.h2 {
+    --tw-text-opacity: 1;
+    color: rgb(226 232 240 / var(--tw-text-opacity));
+    font-size: 1.5rem/* 24px */;
+    line-height: 2rem/* 32px */;
+}

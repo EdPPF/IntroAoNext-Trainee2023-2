@@ -1,13 +1,17 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+// api/users.ts
+
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-type Data = {
-  name: string
-}
-
 export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
+	req: NextApiRequest,
+	res: NextApiResponse
 ) {
-  res.status(200).json({ name: 'John Doe' })
+	const {method} = req;
+	if (method === "GET") {
+		const users = await prisma.user.findMany();
+		return res.status(200).json({
+			data: users,
+		})
+	}
 }
